@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(blue.jpg);
+    background-size: cover;
+}
+
+.box {
+    box-sizing: content-box;
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff solid;
+    text-align: center;
+}
+
+.box h1 {
+    color: aliceblue;
+    font-family: 'comic sans ms';
+    text-transform: lowercase;
+    font-weight: 500;
+}
+
+.box input[type="text"],.box input[type="username"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 30 px auto;
+    text-align: center;
+    border: 3px solid #fff;
+    padding: 14px 10px;
+    width: 260px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus {
+    width: 270px;
+    border-color: #2B3A55;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20 px auto;
+    text-align: center;
+    border: 3px solid #2B3A55;
+    padding: 14px 110px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #2B3A55;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
